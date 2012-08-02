@@ -13,8 +13,8 @@ end
 
 app_dir = node['rails-lastmile']['app_dir']
 
-rbenv_ruby "1.9.2-p290"
-rbenv_global "1.9.2-p290"
+rbenv_ruby "1.9.3-p194"
+rbenv_global "1.9.3-p194"
 
 rbenv_gem "bundler"
 rbenv_gem "rails"
@@ -49,7 +49,7 @@ template "/etc/unicorn.cfg" do
 end
 
 rbenv_script "run-rails" do
-  rbenv_version "1.9.2-p290"
+  rbenv_version "1.9.3-p194"
   cwd app_dir
 
   code <<-EOH
